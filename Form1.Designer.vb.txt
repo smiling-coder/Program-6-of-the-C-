@@ -1,0 +1,201 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class Form1
+    Inherits System.Windows.Forms.Form
+
+    'Form overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()>
+    Protected Overrides Sub Dispose(disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()>
+    Private Sub InitializeComponent()
+        abs = New Button()
+        round = New Button()
+        sqrt = New Button()
+        max = New Button()
+        min = New Button()
+        length = New Button()
+        reverse = New Button()
+        uppercase = New Button()
+        lowercase = New Button()
+        TextBox1 = New TextBox()
+        TextBox2 = New TextBox()
+        TextBox3 = New TextBox()
+        Lbl1 = New Label()
+        Lbl2 = New Label()
+        SuspendLayout()
+        ' 
+        ' abs
+        ' 
+        abs.Location = New Point(24, 24)
+        abs.Name = "abs"
+        abs.Size = New Size(75, 23)
+        abs.TabIndex = 0
+        abs.Text = "absolute"
+        abs.UseVisualStyleBackColor = True
+        ' 
+        ' round
+        ' 
+        round.Location = New Point(27, 66)
+        round.Name = "round"
+        round.Size = New Size(75, 23)
+        round.TabIndex = 1
+        round.Text = "roundoff"
+        round.UseVisualStyleBackColor = True
+        ' 
+        ' sqrt
+        ' 
+        sqrt.Location = New Point(22, 106)
+        sqrt.Name = "sqrt"
+        sqrt.Size = New Size(75, 23)
+        sqrt.TabIndex = 2
+        sqrt.Text = "sqrtroot"
+        sqrt.UseVisualStyleBackColor = True
+        ' 
+        ' max
+        ' 
+        max.Location = New Point(22, 148)
+        max.Name = "max"
+        max.Size = New Size(75, 23)
+        max.TabIndex = 3
+        max.Text = "maximum"
+        max.UseVisualStyleBackColor = True
+        ' 
+        ' min
+        ' 
+        min.Location = New Point(17, 193)
+        min.Name = "min"
+        min.Size = New Size(75, 23)
+        min.TabIndex = 4
+        min.Text = "minimum"
+        min.UseVisualStyleBackColor = True
+        ' 
+        ' length
+        ' 
+        length.Location = New Point(26, 241)
+        length.Name = "length"
+        length.Size = New Size(75, 23)
+        length.TabIndex = 5
+        length.Text = "length"
+        length.UseVisualStyleBackColor = True
+        ' 
+        ' reverse
+        ' 
+        reverse.Location = New Point(24, 285)
+        reverse.Name = "reverse"
+        reverse.Size = New Size(75, 23)
+        reverse.TabIndex = 6
+        reverse.Text = "reverse"
+        reverse.UseVisualStyleBackColor = True
+        ' 
+        ' uppercase
+        ' 
+        uppercase.Location = New Point(26, 336)
+        uppercase.Name = "uppercase"
+        uppercase.Size = New Size(75, 23)
+        uppercase.TabIndex = 7
+        uppercase.Text = "uppercase"
+        uppercase.UseVisualStyleBackColor = True
+        ' 
+        ' lowercase
+        ' 
+        lowercase.Location = New Point(20, 385)
+        lowercase.Name = "lowercase"
+        lowercase.Size = New Size(75, 23)
+        lowercase.TabIndex = 8
+        lowercase.Text = "lowercase"
+        lowercase.UseVisualStyleBackColor = True
+        ' 
+        ' TextBox1
+        ' 
+        TextBox1.Location = New Point(292, 80)
+        TextBox1.Name = "TextBox1"
+        TextBox1.Size = New Size(122, 23)
+        TextBox1.TabIndex = 9
+        ' 
+        ' TextBox2
+        ' 
+        TextBox2.Location = New Point(588, 80)
+        TextBox2.Name = "TextBox2"
+        TextBox2.Size = New Size(134, 23)
+        TextBox2.TabIndex = 10
+        ' 
+        ' TextBox3
+        ' 
+        TextBox3.Location = New Point(433, 209)
+        TextBox3.Name = "TextBox3"
+        TextBox3.Size = New Size(146, 23)
+        TextBox3.TabIndex = 11
+        ' 
+        ' Lbl1
+        ' 
+        Lbl1.AutoSize = True
+        Lbl1.Location = New Point(475, 32)
+        Lbl1.Name = "Lbl1"
+        Lbl1.Size = New Size(35, 15)
+        Lbl1.TabIndex = 12
+        Lbl1.Text = "input"
+        ' 
+        ' Lbl2
+        ' 
+        Lbl2.AutoSize = True
+        Lbl2.Location = New Point(476, 162)
+        Lbl2.Name = "Lbl2"
+        Lbl2.Size = New Size(43, 15)
+        Lbl2.TabIndex = 13
+        Lbl2.Text = "output"
+        ' 
+        ' Form1
+        ' 
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(800, 450)
+        Controls.Add(Lbl2)
+        Controls.Add(Lbl1)
+        Controls.Add(TextBox3)
+        Controls.Add(TextBox2)
+        Controls.Add(TextBox1)
+        Controls.Add(lowercase)
+        Controls.Add(uppercase)
+        Controls.Add(reverse)
+        Controls.Add(length)
+        Controls.Add(min)
+        Controls.Add(max)
+        Controls.Add(sqrt)
+        Controls.Add(round)
+        Controls.Add(abs)
+        Name = "Form1"
+        Text = "Form1"
+        ResumeLayout(False)
+        PerformLayout()
+    End Sub
+
+    Friend WithEvents abs As Button
+    Friend WithEvents round As Button
+    Friend WithEvents sqrt As Button
+    Friend WithEvents max As Button
+    Friend WithEvents min As Button
+    Friend WithEvents length As Button
+    Friend WithEvents reverse As Button
+    Friend WithEvents uppercase As Button
+    Friend WithEvents lowercase As Button
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents Lbl1 As Label
+    Friend WithEvents Lbl2 As Label
+
+End Class

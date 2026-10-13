@@ -1,0 +1,70 @@
+﻿Imports System.ComponentModel.DataAnnotations
+
+Public Class Form1
+    Private Sub abs_Click(sender As Object, e As EventArgs) Handles abs.Click
+        Dim s As Double
+        s = Val(InputBox("enter the number"))
+        TextBox1.Text = s
+        TextBox3.Text = Math.Abs(s)
+    End Sub
+
+    Private Sub round_Click(sender As Object, e As EventArgs) Handles round.Click
+        Dim s As Double
+        s = Val(InputBox("enter the number"))
+        TextBox1.Text = s
+        TextBox3.Text = Math.Round(s)
+    End Sub
+
+    Private Sub sqrt_Click(sender As Object, e As EventArgs) Handles sqrt.Click
+        Dim s As Double
+        s = Val(InputBox("enter the number"))
+        TextBox1.Text = s
+        TextBox3.Text = Math.Sqrt(s)
+    End Sub
+
+    Private Sub max_Click(sender As Object, e As EventArgs) Handles max.Click
+        Dim c, s As Double
+        s = Val(InputBox("enter the first number"))
+        c = Val(InputBox("enter the second number"))
+        TextBox1.Text = s
+        TextBox2.Text = c
+        TextBox3.Text = Math.Max(s, c)
+    End Sub
+
+    Private Sub min_Click(sender As Object, e As EventArgs) Handles min.Click
+        Dim c, s As Double
+        s = Val(InputBox("enter the first number"))
+        c = Val(InputBox("enter the second number"))
+        TextBox1.Text = s
+        TextBox2.Text = c
+        TextBox3.Text = Math.Min(s, c)
+    End Sub
+
+    Private Sub len_Click(sender As Object, e As EventArgs) Handles length.Click
+        Dim s As String
+        s = (InputBox("enter the string"))
+        TextBox1.Text = s
+        TextBox3.Text = len(s)
+    End Sub
+
+    Private Sub reverse_Click(sender As Object, e As EventArgs) Handles reverse.Click
+        Dim s As String
+        s = Val(InputBox("enter the string"))
+        TextBox1.Text = s
+        TextBox3.Text = StrReverse(s)
+    End Sub
+
+    Private Sub ucase_Click(sender As Object, e As EventArgs) Handles uppercase.Click
+        Dim s As String
+        s = (InputBox("enter the string"))
+        TextBox1.Text = s
+        TextBox3.Text = ucase(s)
+    End Sub
+
+    Private Sub lcase_Click(sender As Object, e As EventArgs) Handles lowercase.Click
+        Dim s As String
+        s = (InputBox("enter the string"))
+        TextBox1.Text = s
+        TextBox3.Text = lcase(s)
+    End Sub
+End Class
