@@ -1,0 +1,178 @@
+
+# Demonstration of Various Built-in Functions in VB.NET
+
+## Aim
+To demonstrate various built-in functions available in VB.NET with suitable examples.
+
+## Introduction
+VB.NET provides several built-in functions to perform mathematical calculations, manipulate strings, convert data types, and handle dates and times. These functions make programming easier and reduce the amount of code required.
+
+## Types of Built-in Functions
+
+### 1. Mathematical Functions
+These functions perform mathematical operations.
+
+- `Math.Abs()` – Returns the absolute value.
+- `Math.Sqrt()` – Returns the square root.
+- `Math.Pow()` – Calculates the power of a number.
+- `Math.Round()` – Rounds a decimal number.
+
+Example:
+```vbnet
+Console.WriteLine(Math.Abs(-10))
+Console.WriteLine(Math.Sqrt(25))
+Console.WriteLine(Math.Pow(2, 3))
+Console.WriteLine(Math.Round(12.56))
+```
+
+Output:
+```text
+10
+5
+8
+13
+```
+
+### 2. String Functions
+These functions are used to manipulate strings.
+
+- `Len()` – Returns the length of a string.
+- `UCase()` – Converts text to uppercase.
+- `LCase()` – Converts text to lowercase.
+- `Trim()` – Removes leading and trailing spaces.
+- `Replace()` – Replaces specified text.
+
+Example:
+```vbnet
+Dim name As String = "  Pallavi  "
+
+Console.WriteLine(Len(name))
+Console.WriteLine(UCase("hello"))
+Console.WriteLine(LCase("WELCOME"))
+Console.WriteLine(Trim(name))
+Console.WriteLine(Replace("Hello World", "World", "VB.NET"))
+```
+
+Output:
+```text
+11
+HELLO
+welcome
+Pallavi
+Hello VB.NET
+```
+
+### 3. Date and Time Functions
+These functions work with dates and times.
+
+- `Date.Now` – Returns the current date and time.
+- `Date.Today` – Returns the current date.
+- `DateAdd()` – Adds a time interval to a date.
+- `DateDiff()` – Calculates the difference between dates.
+
+Example:
+```vbnet
+Console.WriteLine(Date.Now)
+Console.WriteLine(Date.Today)
+Console.WriteLine(DateAdd("d", 7, Date.Today))
+Console.WriteLine(DateDiff("d", #10/01/2026#, #10/13/2026#))
+```
+
+Output (illustrative):
+```text
+Current date and time
+Current date
+Date after 7 days
+12
+```
+
+### 4. Type Conversion Functions
+These functions convert values from one data type to another.
+
+- `CInt()` – Converts a value to an integer.
+- `CDbl()` – Converts a value to a double.
+- `CStr()` – Converts a value to a string.
+- `CDate()` – Converts a value to a date.
+
+Example:
+```vbnet
+Console.WriteLine(CInt("25"))
+Console.WriteLine(CDbl("12.5"))
+Console.WriteLine(CStr(100))
+Console.WriteLine(CDate("10/13/2026"))
+```
+
+Output:
+```text
+25
+12.5
+100
+10/13/2026
+```
+
+### 5. Other Useful Functions
+- `IsNumeric()` – Checks whether a value can be interpreted as a number.
+- `IIf()` – Returns one of two values based on a condition.
+- `Val()` – Converts the beginning of a string to a number.
+
+Example:
+```vbnet
+Console.WriteLine(IsNumeric("123"))
+Console.WriteLine(IIf(10 > 5, "True", "False"))
+Console.WriteLine(Val("123ABC"))
+```
+
+Output:
+```text
+True
+True
+123
+```
+
+## Complete Program
+
+```vbnet
+Module BuiltInFunctionsDemo
+
+    Sub Main()
+
+        ' Mathematical functions
+        Console.WriteLine("Mathematical Functions")
+        Console.WriteLine(Math.Abs(-10))
+        Console.WriteLine(Math.Sqrt(25))
+        Console.WriteLine(Math.Pow(2, 3))
+        Console.WriteLine(Math.Round(12.56))
+
+        ' String functions
+        Console.WriteLine(vbCrLf & "String Functions")
+        Console.WriteLine(Len("Pallavi"))
+        Console.WriteLine(UCase("hello"))
+        Console.WriteLine(LCase("WELCOME"))
+        Console.WriteLine(Trim("  VB.NET  "))
+        Console.WriteLine(Replace("Hello World", "World", "VB.NET"))
+
+        ' Date and time functions
+        Console.WriteLine(vbCrLf & "Date and Time Functions")
+        Console.WriteLine(Date.Today)
+        Console.WriteLine(DateAdd("d", 7, Date.Today))
+
+        ' Type conversion functions
+        Console.WriteLine(vbCrLf & "Type Conversion Functions")
+        Console.WriteLine(CInt("25"))
+        Console.WriteLine(CDbl("12.5"))
+        Console.WriteLine(CStr(100))
+
+        ' Other functions
+        Console.WriteLine(vbCrLf & "Other Functions")
+        Console.WriteLine(IsNumeric("123"))
+        Console.WriteLine(Val("123ABC"))
+
+        Console.ReadLine()
+
+    End Sub
+
+End Module
+```
+
+## Conclusion
+Thus, various built-in functions in VB.NET were demonstrated successfully. These functions are useful for mathematical calculations, string manipulation, date and time operations, and data type conversion.
